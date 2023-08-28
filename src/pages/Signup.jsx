@@ -16,7 +16,7 @@ export default function Signup() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/register-user', Credentials);
+            const response = await axios.post('https://edu-tech-api.onrender.com/api/register-user', Credentials);
             if(response) {
                 navigate('/')
             }
