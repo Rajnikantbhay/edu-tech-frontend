@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
 
     const checkSession = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/verify-token', {
+            const response = await axios.get('https://edu-tech-api.onrender.com/api/verify-token', {
                 withCredentials: true,
             });
             if (response.status === 200) {
