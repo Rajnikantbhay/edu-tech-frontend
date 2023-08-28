@@ -19,7 +19,7 @@ export default function Login() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/user-login', Credentials, { withCredentials: true });
+            const response = await axios.post('https://edu-tech-api.onrender.com/api/user-login', Credentials, { withCredentials: true });
             if(response.status === 200) {
               await checkSession()
                 navigate('/');
