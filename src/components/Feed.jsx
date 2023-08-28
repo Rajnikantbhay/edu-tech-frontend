@@ -25,7 +25,7 @@ export default function Feed() {
   useEffect(() => {
     const fetching = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/data');
+        const response = await axios.get('https://edu-tech-api.onrender.com/api/data');
 
         if (response.data) {
           setPosts(response.data.data);
