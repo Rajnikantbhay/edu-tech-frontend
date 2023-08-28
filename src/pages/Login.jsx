@@ -21,7 +21,7 @@ export default function Login() {
         try {
             const response = await axios.post('https://edu-tech-api.onrender.com/api/user-login', Credentials, { withCredentials: true });
             if(response.status === 200) {
-              await checkSession()
+              // await checkSession()
                 navigate('/');
                 
             }
